@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-and-publish-symbols:
-    uses: kirandevops1993/PUBLISH-REUSABLE-/.github/workflows/publish-reusable.yml
+    uses: kirandevops1993/PUBLISH-REUSABLE-/.github/workflows/publish-reusable.yml@main
     with:
       SymbolsPath: '/path/to/symbol/store'
       SearchPattern: '**/bin/**/*.pdb'
