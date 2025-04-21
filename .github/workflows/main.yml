@@ -1,5 +1,4 @@
 name: Main Workflow
-
 on:
   push:
     branches:
@@ -18,4 +17,4 @@ jobs:
       MaxWaitTime: '30'
       SymbolsProduct: 'MyProduct'
       SymbolsVersion: '1.0.0'
-      SymbolsArtifactName: 'Symbols_Debug'
+    
