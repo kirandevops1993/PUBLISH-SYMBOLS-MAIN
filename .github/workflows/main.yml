@@ -15,5 +15,4 @@ jobs:
       WarnIfNotIndexed: true
       MaxWaitTime: '30'
       SymbolsProduct: 'MyProduct'
-      SymbolsVersion: '1.0.0'
-    
+      SymbolsVersion: '1.0.0'   
