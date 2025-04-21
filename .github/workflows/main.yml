@@ -1,0 +1,21 @@
+name: Main Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build-and-publish-symbols:
+    uses: ./.github/workflows/publish-symbols.yml
+    with:
+      SymbolsPath: '/path/to/symbol/store'
+      SearchPattern: '**/bin/**/*.pdb'
+      SymbolsFolder: '/path/to/symbols/folder'
+      SkipIndexing: false
+      WarnIfNotIndexed: true
+      MaxWaitTime: '30'
+      SymbolsProduct: 'MyProduct'
+      SymbolsVersion: '1.0.0'
+      SymbolsArtifactName: 'Symbols_Debug'
